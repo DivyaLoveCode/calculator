@@ -53,3 +53,47 @@ width: 145px;
 form input.operator{
 color: #33ffd8;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+	.calculator {
+		width: 90%;  /* Make the calculator responsive */
+		max-width: 350px;  /* Adjust the max width for smaller screens */
+	}
+
+	.calculator form input {
+		width: 50px;  /* Reduce button size */
+		height: 50px;
+		font-size: 18px;  /* Smaller font size */
+		margin: 8px;
+	}
+
+	form .display input {
+		font-size: 35px;  /* Smaller font size for display */
+	}
+
+	form input.equal {
+		width: 120px;  /* Adjust width for equal button */
+	}
+}
+
+@media (max-width: 480px) {
+	.calculator {
+		width: 90%;  /* Take more space on very small screens */
+		max-width: 300px;  /* Limit the width */
+	}
+
+	.calculator form input {
+		width: 45px;  /* Further reduce button size */
+		height: 45px;
+		font-size: 16px;  /* Even smaller font size */
+	}
+
+	form .display input {
+		font-size: 30px;  /* Smaller font size for display */
+	}
+
+	form input.equal {
+		width: 100px;  /* Adjust width for smaller screen */
+	}
+}
